@@ -3,12 +3,35 @@ function getIt() {
     alert('Hey!');
 });
 }
+<<<<<<< HEAD
 
 function frameIt() {
   $('img').on('load', function(){
   $('img').addClass('tasty');
 });
 }
+=======
+
+function frameIt() {
+  $('img').on('load', function(){
+  $('.tasty').append('img');
+});
+}
+
+function pressIt() {
+  
+}
+
+function submIt() {
+   if ($( "input:first" ).val() === "") {
+    alert('your form is going to be submitted now');
+    return;
+  }
+}
+
+$(document).ready(function(){
+getIt();
+>>>>>>> 8fd4352a9f1f5abd463099efe85aa123e6b95cdb
 
 function pressIt() {
   $(document).on('keydown', function(key) {
